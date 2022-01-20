@@ -1,18 +1,18 @@
 export const binarySearch = (arr: number[], searchItem: number) => {
-  const sorted = arr.sort((a, b) => a - b)
-  let low = 0
-  let high = sorted.length - 1
+  const sortedArray = arr.sort((a, b) => a - b)
+  let start = 0
+  let end = sortedArray.length - 1
 
-  while (low <= high) {
-    const mid = (low + high) / 2
-    const guess = sorted[mid]
+  while (start <= end) {
+    const middle = Math.floor((start + end) / 2)
+    const guess = sortedArray[middle]
 
     if (guess === searchItem) {
-      return mid
-    } else if (guess > searchItem) {
-      high = mid - 1
+      return middle
+    } else if (guess < searchItem) {
+      start = middle + 1
     } else {
-      low = mid + 1
+      end = middle - 1
     }
   }
 

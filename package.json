@@ -5,7 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "ts-node src/index.ts"
+    "watch": "tsc -b -w",
+    "start": "ts-node ./src/index.ts"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
