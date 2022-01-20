@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "watch": "ts node src/intex.ts"
+    "watch": "ts-node src/index.ts"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
