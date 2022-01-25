@@ -16,5 +16,5 @@ export const binarySearch = (arr: number[], searchItem: number) => {
     }
   }
 
-  return undefined
+  return null
 }

@@ -1,5 +1,9 @@
-import { binarySearch } from './binarySearch'
+import { performance } from 'perf_hooks'
+import { selectionSort } from './selectionSort'
+const t1 = performance.now()
 
-const myList = [1, 3, 5, 7, 9]
+console.log(selectionSort([5, 3, 6, 2, 10]))
 
-console.log(binarySearch(myList, 5))
+const t2 = performance.now()
+
+console.log(t2 - t1)
